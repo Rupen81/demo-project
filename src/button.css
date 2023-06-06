@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: rgb(255, 255, 255);
 }
 .Btn button{
@@ -22,4 +22,10 @@ body{
     text-shadow: 2px 2px 6px #d6cfcf;
     font-size: 16px;
     cursor: pointer;
+} */
+
+button{
+    padding: 50px;
+    
+    border-radius:10px ;
 }

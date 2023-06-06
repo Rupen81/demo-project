@@ -1,14 +1,14 @@
 
 .box1{ 
-    width: 45px;
-    height: 50px;
+    /* width: 45px;
+    height: 50px; */
     /* background-color: red; */
     border: 2px solid black;
     padding: 50px;
     transition: 0.5S;
 }
-.box1:hover{
+/* .box1:hover{
     height: 60px;
     width: 55px;
     transition: 0.5S;
-}
+} */

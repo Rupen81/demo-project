@@ -1,29 +1,51 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+// import { Component } from 'react';
 import './App.css';
+import Form from './Form';
 // import Button from './button';
-import Boxes from './box';
-import { useState } from 'react';
+// import Boxes from './box';
+// import { useState } from 'react';
+// import Button from './button2';
+// export const colors = ["black", "red", "green", "blue", "yellow", "pink", "cyan", "skyblue", "purple"];
 
 
 function App() {
-  // const [count,setCount] = useState(0);
-  const [color, setColor] = useState([{ color: "" }, { color: "" }, { color: "" }, { color: "" }, { color: "" }, { color: "" }])
-  // const duplicateArray = Array.from({ length: 100 });
-  const colors = ["red", "green", "blue", "yellow", "pink", "cyan", "skyblue", "purple"];
-  function onClick(index) {
-    const upDateArray = color.map((ele, i) => {
-      if (index === i) {
-        return {
-          color: colors[Math.floor(Math.random() * colors.length)]
-        }
-      }
-      else { return ele }
-    })
-    setColor(upDateArray)
-  }
+// class App extends Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       count: true
+//     }
+//   }
+
+// const [count,setCount] = useState(0);
+// const [color, setColor] = useState([{ color: "" }, { color: "" }, { color: "" }, { color: "" }, { color: "" }, { color: "" }])
+// const duplicateArray = Array.from({ length: 100 });
+// const colors = ["red", "green", "blue", "yellow", "pink", "cyan", "skyblue", "purple"];
+// function onClick(index) {
+//   const upDateArray = color.map((ele, i) => {
+//     if (index === i) {
+//       return {
+//         color: colors[Math.floor(Math.random() * colors.length)]
+//       }
+//     }
+//     else { return ele }
+//   })
+//   setColor(upDateArray)
+// }
+// render(){
+
   return (
     <>
+
       <div className="App">
+        <Form />
+        {/* <h1> this button is {this.state.count > 10 ? 0 : this.state.count}</h1> */}
+        {/* {this.state.count ?
+        <h1>Rupen</h1>
+        :
+        <h1>Darshil</h1>}
+        <button onClick={() => this.setState({ count: !this.state.count })}>Click me</button> */}
         {/* colors[Math.floor(Math.random() * colors.length)] */}
 
         {/* <Post src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg" content={"Wikis are enabled by wiki software, otherwise known as wiki engines. A wiki engine, being a form of a content management system, differs from other web-based systems such as blog software, in that the content is created without any defined owner or leader, and wikis have little inherent structure, allowing structure to emerge according to the needs of the users. Some wiki engines are free and open-source, whereas others are proprietary. Some permit control over different functions (levels of access); for example, editing rights may permit changing, adding, or removing material. Others may permit access without enforcing access control. Other rules may be imposed to organize content.A wiki invites all users—not just experts—to edit any page or to create new pages within the wiki web site, using only a standard 'plain-vanilla' Web browser without any extra add-ons.A wiki is not a carefully crafted site created by experts and professional writers and designed for casual visitors. Instead, it seeks to involve the typical visitor/user in an ongoing process of creation and collaboration that constantly changes the website landscape."} />
@@ -47,9 +69,9 @@ function App() {
 
 
 
-        {color.map((ele, i) => (
+        {/* {color.map((ele, i) => (
           <Boxes index={i} color={ele.color} onClick={onClick}></Boxes>
-        ))}
+        ))} */}
         {/* {
         count ?
         <h1>Rupen</h1>
@@ -61,9 +83,12 @@ function App() {
         this button is for {count} click.
       </h1>
         <button onClick={() => setCount(count >=10 ? count: count + 1)}>Click me</button> */}
+        {/* <Button title={"This is class component"} /> */}
+        {/* <Button title={"This is function component"} /> */}
       </div>
     </>
-  );
-}
 
+  );
+} 
+// }
 export default App;
