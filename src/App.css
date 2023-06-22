@@ -30,7 +30,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #a19f9f;
 }
 
 @keyframes App-logo-spin {
@@ -44,7 +44,7 @@
 }
 
 body {
-  background-color: gray;
+  /* background-color: gray; */
 }
 
 .poster {
