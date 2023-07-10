@@ -43,9 +43,6 @@
   }
 }
 
-body {
-  /* background-color: gray; */
-}
 
 .poster {
   width: 50%;
@@ -121,3 +118,4 @@ body {
   font-family: fantasy;
   letter-spacing: 0.4mm;
 }
+

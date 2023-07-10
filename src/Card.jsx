@@ -1,7 +1,10 @@
 import { useRef } from "react";
 import { colors } from "./App";
+import HOC from "./HOC";
 
-function Card({ name, grno, cource, dob, address }) {
+function Card({ name, grno, cource, dob, address, ...props }) {
+    console.log(props);
+
     const cardRef = useRef();
 
     const changeColor=() => {
@@ -28,4 +31,4 @@ function Card({ name, grno, cource, dob, address }) {
     )
 }
 
-export default Card;
+export default HOC(Card)

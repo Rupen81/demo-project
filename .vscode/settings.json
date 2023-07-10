@@ -1,0 +1,6 @@
+{
+    "editor.cursorBlinking": "expand",
+    "css.lint.duplicateProperties": "warning",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.reduceMotion": "off"
+}

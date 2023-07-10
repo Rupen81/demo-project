@@ -8,9 +8,9 @@ import React from "react";
 //     }
 // }
 
-function H1(){
-    return(
-        <><h1>Hello</h1><p>Darshil gando chhe</p></>
+function H1() {
+    return (
+        <><h1>Hello</h1><p>Darshil  </p></>
     )
 }
 export default H1;
